@@ -20,10 +20,7 @@ const props = defineProps({
     }
 })
 
-const maxWidth = ref('maxWidth')
-maxWidth.value =  props.w
 const canvas = ref(null)
-
 
 onMounted(() => {
     console.log(props)
@@ -33,10 +30,18 @@ onMounted(() => {
     ctx.arc(95, 50, 40, 0, 2 * Math.PI)
     ctx.stroke()
 })
-
-
 </script>
 <template>
-    <canvas ref="canvas" :width="w" :height="h" style="border:1px solid #000000;">
-    </canvas>
+    <canvas class="canvas" ref="canvas" :width="w" :height="h" />
 </template>
+<style scoped>
+.canvas {
+    border: 1px solid #2ddeeb;
+    background-color: #f1f1f1;
+    padding: 0px;
+    margin: 0px;
+    word-wrap: break-word;
+    overflow: hidden;
+    inline-size:min-content;
+}
+</style>

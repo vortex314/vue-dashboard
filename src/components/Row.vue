@@ -11,13 +11,14 @@ const props = defineProps({h: Number, w: Number})
 
 <style scoped>
 div {
-    border: 4px solid #2ddeeb;
+    border: 1px solid #2ddeeb;
     background-color: #f1f1f1;
-    padding: 10px;
-    margin: 1px;
+    padding: 0px;
+    margin: 0px;
     word-wrap: break-word;
     overflow: hidden;
     inline-size:min-content;
+    width: 100%;
 }
 .flex {
     display: flex;

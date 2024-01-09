@@ -29,7 +29,7 @@ const id = ref(null)
 
 function pressed() {
     console.log("pressed")
-    // send a message to the server
+    publish(props.src, props.pressed)
 }
 
 onMounted(() => {

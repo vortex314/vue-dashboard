@@ -6,8 +6,13 @@ import Col from './components/Col.vue'
 import Button from './components/Button.vue'
 import { ref, onMounted, reactive } from 'vue'
 
-const title = reactive({ name: "My Title" })
+const theme = { 
+  background_color: 0x000000,
+  border_color: 0x2ddeeb,
+  text_color: 0x2222EE,
+  button_color: 0x2ddeeb,
 
+}
 </script>
 
 <template>
