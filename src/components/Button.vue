@@ -1,3 +1,8 @@
+<template>
+    <button @click="pressed" ref="id" :width="w" :height="h">{{ label }}
+    </button>
+</template>
+
 <script setup>
 import { ref, onMounted, reactive } from 'vue'
 
@@ -38,7 +43,3 @@ onMounted(() => {
 
 
 </script>
-<template>
-    <button @click="pressed" ref="id" :width="w" :height="h">{{ label }}
-    </button>
-</template>

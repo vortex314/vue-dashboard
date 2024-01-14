@@ -17,11 +17,11 @@ const theme = {
 
 <template>
   <Dashboard :h=768 :w=1024>
-    <Row :h=200>
-      <Gauge :w=100 src="src/esp32/sys/heap" :min=0.0 :max=50000.0 />
-      <Gauge :w=200 />
-      <Gauge :w=300 />
-      <Gauge :w=400 />
+    <Row :h=150>
+      <Gauge :w=100 label="Bytes" src="src/esp32/sys/heap" :minValue=0.0 :maxValue=50000.0 />
+      <Gauge :w=200 label="°C" src="src/esp32/sys/temp" :minValue=0.0 :maxValue=1000.0 />
+      <Gauge :w=300 label="Gauge3"/>
+      <Gauge :w=400 label ="Gauge4"/>
     </Row>
     <Col :w=100>
       <Button :w=100 :h=100 label="Please reset."/>
